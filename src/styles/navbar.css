@@ -1,0 +1,79 @@
+/* Estilo del navbar */
+.navbar {
+    border-bottom: 2px solid #007bff;
+    background: #2e2e2e;
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.navbar-brand:hover {
+    color: #e0e0e0;
+}
+
+.navbar-expand-lg .navbar-nav {
+    margin-left: auto;
+}
+
+/* Estilo del botón */
+.custom-btn {
+    display: inline-flex;
+    align-items: center;
+    background: #4a90e2;
+    color: white;
+    font-family: inherit;
+    font-size: 15px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 0.9em;
+    letter-spacing: 0.05em;
+    box-shadow: inset 0 0 1.6em -0.6em #357abd;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.custom-btn .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #2d6db4;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.custom-btn:hover {
+    background: #357abd;
+}
+
+.custom-btn:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.custom-btn .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #2d6db4;
+}
+
+.custom-btn:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.custom-btn:active .icon {
+    transform: scale(0.95);
+}
